@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:controller="login.LoginScreenController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="413.0" prefWidth="600.0" style="-fx-background-color: gray;">
+         <children>
+            <TextField fx:id="loginName" layoutX="300.0" layoutY="126.0" prefHeight="26.0" prefWidth="159.0" />
+            <TextField fx:id="password" layoutX="300.0" layoutY="187.0" prefHeight="26.0" prefWidth="159.0" />
+            <Button fx:id="Login" layoutX="300.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: orange;" text="Login" textFill="#0d0401">
+               <font>
+                  <Font name="Algerian" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="UserName" layoutX="173.0" layoutY="125.0" prefHeight="27.0" prefWidth="120.0" text="User Name">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Password" layoutX="167.0" layoutY="186.0" prefHeight="27.0" prefWidth="131.0" text=" Passaword">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Welcome" prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: orange;" text="     Welcome In E-Comerce Projects">
+               <font>
+                  <Font name="Arial Black" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="login" layoutX="221.0" layoutY="68.0" style="-fx-background-color: orange;" text=" User Login..">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorMassage" layoutX="296.0" layoutY="311.0" prefHeight="18.0" prefWidth="216.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
